@@ -1,0 +1,133 @@
+/* =====================================================================
+
+  description: css footer styles
+
+  author: eric specht | wes11@psu.edu | 5-7752
+
+  modification history
+
+  date        initials    description
+  ------------------------------------------------------------
+  11-19-21    wes11       initial creation
+
+========================================================================= */
+footer {
+  clear: both;
+  background: #001E44;
+  color: white;
+  margin-top: 40px;
+  padding: 40px 0 0px 0;
+  border-bottom: 8px solid #009CDE;
+}
+
+footer .footer-inner {
+  padding: 0px !important;
+}
+
+footer .footer-inner #block-footer, footer .footer-inner #block-sitefooter {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-gap: 1rem;
+}
+
+footer .footer-inner #block-sitefooter .lionshrine {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer .footer-inner #block-sitefooter .bottom-mark {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10px;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  position: relative;
+}
+
+footer .footer-inner #block-footer .bottom-mark, footer .footer-inner #block-sitefooter .bottom-mark {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10px;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  position: relative;
+}
+
+footer .footer-inner #block-sitefooter .unit-info {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+footer .footer-inner #block-footer .unit-info ul.details, footer .footer-inner #block-sitefooter .unit-info ul.details {
+  margin-bottom: 40px;
+}
+
+footer .footer-inner #block-footer .unit-info ul li:first-child, footer .footer-inner #block-sitefooter .unit-info ul li:first-child {
+  padding-left: 0;
+}
+
+footer .footer-inner #block-footer .unit-info ul li, footer .footer-inner #block-sitefooter .unit-info ul li {
+  color: #ccdae6;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.125rem;
+  color: #ccdae6;
+}
+
+footer .footer-inner #block-footer .unit-info ul.tight, footer .footer-inner #block-sitefooter .unit-info ul.tight {
+  padding: .5rem 0;
+}
+
+footer .footer-inner #block-footer .unit-info ul.with-border, footer .footer-inner #block-sitefooter .unit-info ul.with-border {
+  border-bottom: 1px dashed #1e407c;
+}
+
+footer .footer-inner #block-footer .unit-info ul li a, footer .footer-inner #block-sitefooter .unit-info ul li a {
+  color: white;
+}
+
+footer .footer-inner #block-footer .unit-info ul li:last-child, footer .footer-inner #block-sitefooter .unit-info ul li:last-child {
+  border: 0;
+}
+
+.footer-svg img {
+    max-width: 200px;
+    margin: auto;
+}

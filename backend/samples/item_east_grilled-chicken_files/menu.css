@@ -1,0 +1,90 @@
+/* =============================================================
+
+  name: menu.css
+
+  description: includes all styles specific to the menu details
+
+  author: eric specht | 5-7752 | wes11@psu.edu
+
+  modification history:
+
+  date       initials  description
+  ------------------------------------------------------------------
+  10-28-22   wes11     initial creation
+
+==================================================================== */
+#nav-outer {
+  background-color: var(--mid-blue);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px;
+  max-height: 38px;
+  max-width: var(--default-max-width);
+  text-align: center;
+}
+
+#nav-main {
+  display: inline-block;
+}
+
+#nav {
+  list-style: none;
+  padding: 0;
+}
+
+#nav li {
+  float: left;
+  padding: 0 10px;
+}
+
+#nav li a {
+  color: var(--white);
+  display: block;
+  font-size: 1em;
+  padding: 7px 15px;
+  text-decoration: none;
+}
+
+#nav li a:hover {
+  text-decoration: underline;
+}
+
+#nav li.active-trail {
+  background-color: var(--blue);
+}
+
+#nav li.active-trail a {
+  color: var(--bright-green);
+}
+
+#nav li.active-trail a:before {
+  font-family: FontAwesome;
+  content: "\f0da";
+  padding-right: 5px;
+  font-size: 10px;
+}
+
+#nav li a:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  text-decoration: none;
+}
+
+#sub-nav-outer {
+  background-color: var(--blue);
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 38px;
+  max-width: var(--default-max-width);
+  text-align: center;
+}
+
+#sub-nav-main {
+  display: inline-block;
+}
+
+#sub-nav-main li a:hover {
+  background-color: var(--mid-blue);
+  color: var(--white);
+  text-decoration: none;
+}

@@ -1,0 +1,290 @@
+/* =====================================================================
+
+  description: css responsive styles
+
+  author: eric specht | wes11@psu.edu | 5-7752
+
+  modification history
+
+  date        initials    description
+  ------------------------------------------------------------
+  03-16-17    wes11       initial creation
+
+========================================================================= */
+/*
+  480px(+)
+*/
+ @media (min-width: 480px) {
+  .responsive-table th, .responsive-table td {
+    padding: 0.1em .75em;
+  }
+}
+
+/*
+  768px(1)
+*/
+@media screen and (max-width: 768px) {
+  a.lt-link { color: var(--white); }
+
+  .mh-166 {
+    max-height: none;
+  }
+  
+  .w-100 {
+    max-width: 97%;
+  }
+}
+
+/*
+  768px(+)
+*/
+@media screen and (min-width: 768px) {
+  footer .footer-inner #block-footer .unit-info ul li, footer .footer-inner #block-sitefooter .unit-info ul li {
+    display: inline-block;
+    border-right: 1px solid var(--black);
+    padding: 0 .5rem;
+    padding-left: 0.5rem;
+  }
+
+  .hide-el { visibility: visible; }
+  .bt-thick { border-top: 5px solid var(--black) !important; }
+
+  .responsive-table {
+    font-size: 0.9em;
+  }
+
+  .responsive-table tr {
+    display: table-row;
+  }
+
+  .responsive-table caption {
+    font-size: 1.5em;
+  }
+
+  .responsive-table tbody {
+    display: table-row-group;
+  }
+
+  .responsive-table thead {
+    position: relative;
+    clip: auto;
+    height: auto;
+    width: auto;
+    overflow: auto;
+  }
+
+  .responsive-table tbody tr {
+    display: table-row;
+    border-width: 1px;
+  }
+
+  .responsive-table th, .responsive-table td {
+    display: table-cell;
+    padding: 0.5em;
+  }
+
+  .responsive-table tbody tr:nth-of-type(even) {
+    background-color: var(--light-gray);
+  }
+
+  .responsive-table tbody th[scope="row"] {
+    background-color: transparent;
+    color: var(--black);
+    text-align: left;
+  }
+
+  .responsive-table tbody td {
+    border-left: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    text-align: left;
+  }
+
+  .responsive-table tbody td:last-of-type {
+    border-right: 1px solid var(--black);
+  }
+
+  .responsive-table tbody td[data-title]:before {
+    content: none;
+  }
+
+  .responsive-table tbody td[data-type=currency] {
+    text-align: right;
+  }
+}
+
+/*
+  992px/960px(+)
+*/
+@media screen and (min-width: 992px) {
+  /* columns */
+  .col-12 { width: 100%; }
+  .col-11 { width: 91.66666667%; }
+  .col-10 { width: 83.33333333%; }
+  .col-9 { width: 75%; }
+  .col-8 { width: 66.66666667%; }
+  .col-7 { width: 58.33333333%; }
+  .col-6 { width: 50%; }
+  .col-5 { width: 41.66666667%; }
+  .col-4 { width: 33.33333333%; }
+  .col-3 { width: 25%; }
+  .col-2sm { width: 10.66666667%; }
+  .col-2 { width: 16.66666667%; }
+  .col-1 { width: 8.33333333%; }
+  .sm-col { width: 3%; }
+
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .sm-col {
+    float: left;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .responsive-table {
+    font-size: 1em;
+  }
+
+  .responsive-table tfoot {
+    font-size: 0.9em;
+  }
+
+  .responsive-table th, .responsive-table td {
+    padding: 0.75em 0.5em;
+  }
+
+  .col-form-label {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-inner #block-sitefooter .lionshrine {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  footer .footer-inner #block-sitefooter .bottom-mark {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  footer .footer-inner #block-footer .bottom-mark, footer .footer-inner #block-sitefooter .bottom-mark {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  footer .footer-inner #block-sitefooter .unit-info {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  footer .footer-inner #block-footer .unit-info ul.details, footer .footer-inner #block-sitefooter .unit-info ul.details {
+    text-align: left;
+  }
+
+  footer .footer-inner #block-sitefooter .unit-info ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0px;
+  }
+
+  footer .footer-inner #block-footer .unit-info ul.tight, footer .footer-inner #block-sitefooter .unit-info ul.tight {
+    text-align: left;
+  }
+
+  footer .footer-inner #block-footer .unit-info ul.with-border, footer .footer-inner #block-sitefooter .unit-info ul.with-border {
+    display: inline-block;
+  }
+}
+
+/*
+  991px(-)
+*/
+@media screen and (max-width: 991px) {
+  .wa { width: 100%; }
+  .w10 { width: 100%; }
+  .w15 { width: 100%; }
+  .w20 { width: 100%; }
+  .w25 { width: 100%; }
+  .w33 { width: 100%; }
+  .w50 { width: 100%; }
+  .w75 { width: 100%; }
+  .w80 { width: 100%; }
+  .w85 { width: 100%; }
+  .w90 { width: 100%; }
+
+  .rpt-pb-20 { padding-bottom: 20px !important; }
+  .rpt-ml-20 { margin-left: 20px; }
+  .rpt-mb-20 { margin-bottom: 20px; }
+  .w-33 { width: 33%; }
+  .rpt-0 { width: 0; }
+  .rpt-33 { width: 33%; }
+  .rpt-60 { width: 60%; }
+  .rpt-label:before { content: '\A'; }
+  .rpt-al { 
+    width: 60px;
+    margin-right: 10px;
+  }
+
+  .form-floating>.form-control, .form-floating>.form-control-plaintext {
+    margin-bottom: 10px;
+  }
+
+  .responsive-table tbody th[scope="row"] {
+    border: 1px solid var(--black);
+  }
+
+  .responsive-table tbody td[data-title]:before {
+    font-size: inherit;
+    font-weight: bold;
+    padding-right: 10px;
+  }
+
+  .additional-buttons {
+    margin-top: 20px;
+  }
+
+  .legend-header {
+    margin-top: 20px;
+  }
+}
+
+/*
+  1200px(+)
+*/
+@media (min-width: 1200px) {
+  .responsive-table th, .responsive-table td {
+    padding: 0.75em;
+  }
+}

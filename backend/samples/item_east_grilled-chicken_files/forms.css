@@ -1,0 +1,41 @@
+/* =============================================================
+
+  name: style.css
+
+  description: form styles
+
+  author: eric specht | 5-7752 | wes11@psu.edu
+
+  modification history:
+
+  date       initials  description
+  ------------------------------------------------------------------
+  11-09-22   wes11     initial creation
+
+==================================================================== */
+.col-form-label {
+  font-size: 1.1em;
+  padding-right: 10px !important;
+  text-align: left;
+}
+
+.responsive-table tbody th[scope="row"] {
+  font-weight: normal;
+}
+
+/*
+  buttons
+*/
+.nutrition-button {
+  font-size: 12px;
+  height: 25px;
+  padding: 0;
+  width: 80px;
+}
+
+.smaller-button {
+  font-size: 12px;
+  height: 25px;
+  padding: 0;
+  width: 200px;
+}
